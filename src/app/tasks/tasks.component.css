@@ -1,0 +1,103 @@
+/* Task Section */
+#tasks {
+    width: 95%;
+    max-width: 800px; /* Increased width for a more professional layout */
+    margin: 2rem auto;
+    padding: 25px;
+    background-color: #1b0831;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added subtle shadow */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Title Styling */
+h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #d0c2e1;
+}
+
+/* Menu Button */
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+menu button {
+    background: linear-gradient(135deg, #9965dd, #7d50c5);
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+menu button:hover {
+    background: linear-gradient(135deg, #7d50c5, #4a2976);
+    box-shadow: 0 3px 8px rgba(156, 115, 202, 0.5);
+}
+
+/* Task List Container */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 450px; /* Slightly increased height for more visible tasks */
+    overflow-y: auto;
+    border-radius: 6px;
+}
+
+/* Task List Items */
+.task-list li {
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    
+}
+
+
+
+/* Custom Scrollbar (WebKit) */
+.task-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+    background: #9965dd;
+    border-radius: 5px;
+}
+
+.task-list::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Responsive Tweaks */
+@media (min-width: 1024px) {
+    #tasks {
+        padding: 30px;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    menu button {
+        font-size: 18px;
+        padding: 14px 22px;
+    }
+
+    .task-list {
+        max-height: 500px;
+    }
+}

@@ -1,0 +1,99 @@
+/* Backdrop */
+.backdrop {
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Centered Dialog */
+dialog {
+    width: 90%;
+    max-width: 32rem;
+    background: rgba(67, 51, 82, 0.95);
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    position: fixed;
+    
+    /* Ensures smooth positioning */
+
+    z-index: 20;
+    color: #d0c2e1;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.3s ease-out forwards; /* 'forwards' ensures animation state is retained */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1; /* Initially hidden to prevent jump */
+}
+
+
+
+
+/* Typography */
+h2 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #e5daf5;
+}
+
+/* Input & Textarea */
+input,
+textarea {
+    width: 100%;
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #c5b1de;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Action Buttons */
+.actions {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background: linear-gradient(135deg, #9c73ca, #895cce);
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(156, 115, 202, 0.4);
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #895cce, #7d50c5);
+    box-shadow: 0 5px 15px rgba(156, 115, 202, 0.6);
+}
+
+/* Responsive Enhancements */
+@media (min-width: 768px) {
+    dialog {
+        padding: 2.5rem;
+    }
+}

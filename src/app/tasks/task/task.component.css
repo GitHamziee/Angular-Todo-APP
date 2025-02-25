@@ -1,0 +1,67 @@
+
+
+/* Task Header */
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+/* Task Title */
+.task-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f8f8f8;
+    margin: 0;
+}
+
+/* Due Date */
+.task-time {
+    font-size: 14px;
+    color: #d4c1f7;
+    font-weight: 500;
+}
+
+/* Task Description */
+.task-summary {
+    font-size: 16px;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Button Container */
+.actions {
+    text-align: right;
+}
+
+/* Complete Button */
+.complete-btn {
+    background: linear-gradient(135deg, #a06cd5, #7b5ac4);
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for Button */
+.complete-btn:hover {
+    background: white;
+    color: #7b5ac4;
+    border: 2px solid #7b5ac4;
+    box-shadow: 0 4px 8px rgba(160, 108, 213, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .task-card {
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,14 @@
+<app-card>
+    <div class="task-header">
+        <h2 class="task-title">{{ data.title }}</h2>
+      <!-- date:'fullDate' -->
+        <time class="task-time">{{ data.dueDate | date }}</time>
+
+    </div>
+
+    <p class="task-summary">{{ data.description }}</p>
+
+    <p class="actions">
+        <button (click)="completeTask()" class="complete-btn">Complete</button>
+    </p>
+</app-card>
